@@ -5,7 +5,11 @@
 ## Repository
 - Varsayılan dal: `main` (repo bootstrap'ta `git init -b main` ile oluşturuldu).
 - Dal adları, commit mesajları ve kod İngilizce (`docs/conventions.md`, Language).
-- Remote ve CI: bootstrap REPORT'ta karara bağlanır.
+- Remote: GitHub — `https://github.com/DuyguOzmen-polsan/polsan-radar.git` (`origin`). CI: GitHub
+  Actions (`.github/workflows/check.yml`); full green CI'dan gelir (`docs/testing.md` Two speeds 6).
+  Her dal PR ile ve squash-merge ile `main`'e girer; `chore/bootstrap` dahil.
+- Kurumsal ağ notu: bu repoda `http.sslBackend=schannel` (Windows sertifika deposu) yerel ayarlıdır;
+  SSL doğrulaması asla kapatılmaz.
 
 ## Branching
 - `feature/<spec-no>-<short-name>` — **no branch without a spec.** Also for CHANGE-lane mini-specs.
